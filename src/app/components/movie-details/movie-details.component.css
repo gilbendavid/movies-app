@@ -1,0 +1,27 @@
+:host {
+  display: grid;
+  margin: 4px;
+  padding: 8px;
+  border: 1px solid rgba(124, 104, 238, 0.35);
+  border-radius: 10px;
+}
+.movie_details {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 5vh 15vh 1fr;
+}
+
+h1 {
+  text-align: center;
+  color: rgba(173, 216, 230, 0.315);
+}
+
+h2 {
+  font-size: 15px;
+}
+
+img {
+  margin: 0 auto;
+  width: 300px;
+  height: 400px;
+}

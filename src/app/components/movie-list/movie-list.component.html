@@ -1,0 +1,13 @@
+<ul *ngIf="!isBusy">
+  <li
+    *ngFor="let movie of moviesList"
+    (click)="onSelect(movie)"
+    [class.chosen]="movie === selected"
+  >
+    {{ movie.caption }}
+  </li>
+</ul>
+<img
+  *ngIf="isBusy"
+  src="https://cdn.dribbble.com/users/29051/screenshots/2347771/spinner.mov.gif"
+/>

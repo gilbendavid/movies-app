@@ -1,0 +1,11 @@
+<div *ngIf="!isBusy" class="movie_details">
+  <h1>
+    {{ caption }}
+  </h1>
+  <h2>{{ description }}</h2>
+  <img src="{{ poster }}" />
+</div>
+<img
+  *ngIf="isBusy"
+  src="https://cdn.dribbble.com/users/29051/screenshots/2347771/spinner.mov.gif"
+/>
